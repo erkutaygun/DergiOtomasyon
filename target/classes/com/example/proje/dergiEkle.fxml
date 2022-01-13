@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="511.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proje.dergiEkle">
+   <children>
+      <Label layoutX="243.0" layoutY="14.0" text="Dergi Ekle">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="dergiAd" layoutX="165.0" layoutY="67.0" prefHeight="39.0" prefWidth="271.0" promptText="Dergi Adi">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="dergiYayin" layoutX="165.0" layoutY="125.0" prefHeight="39.0" prefWidth="271.0" promptText="Dergi yayin">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="dergiISSN" layoutX="165.0" layoutY="191.0" prefHeight="39.0" prefWidth="271.0" promptText="Dergi ISSN">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="dergiAra" layoutX="165.0" layoutY="256.0" prefHeight="39.0" prefWidth="271.0" promptText="Dergi yayin Ara">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <JFXButton buttonType="RAISED" layoutX="272.0" layoutY="317.0" onMouseClicked="#dergiEkle" text="Ekle">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="exit" buttonType="RAISED" layoutX="436.0" layoutY="420.0" onMouseClicked="#Cikis" text="Cikis">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

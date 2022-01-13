@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proje.Abonelik">
+   <children>
+      <TableView fx:id="tablo" layoutX="32.0" layoutY="48.0" prefHeight="200.0" prefWidth="543.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="AboneNo" ><cellValueFactory><PropertyValueFactory property="Aboneid">
+          </PropertyValueFactory></cellValueFactory></TableColumn>
+          <TableColumn prefWidth="93.0" text="kullaniciID" ><cellValueFactory><PropertyValueFactory property="kullaniciId">
+          </PropertyValueFactory></cellValueFactory></TableColumn>
+            <TableColumn prefWidth="118.0" text="dergiID" ><cellValueFactory><PropertyValueFactory property="dergiId">
+            </PropertyValueFactory></cellValueFactory></TableColumn>
+            <TableColumn prefWidth="164.0" text="gazeteID"><cellValueFactory><PropertyValueFactory property="gazeteId">
+            </PropertyValueFactory></cellValueFactory></TableColumn>
+            <TableColumn prefWidth="92.0" text="Onay" ><cellValueFactory><PropertyValueFactory property="onay">
+            </PropertyValueFactory></cellValueFactory></TableColumn>
+        </columns>
+      </TableView>
+      <JFXButton fx:id="exit" buttonType="RAISED" layoutX="492.0" layoutY="299.0" onMouseClicked="#Cikis" text="Cikis">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

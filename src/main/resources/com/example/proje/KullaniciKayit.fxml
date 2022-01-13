@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"  prefHeight="375.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proje.KullaniciKayit">
+    <children>
+        <Label layoutX="141.0" layoutY="14.0" text="Kullanici Kayit">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+        <TextField fx:id="kullaniciAdi" layoutX="134.0" layoutY="100.0" prefHeight="30.0" prefWidth="234.0" promptText="Kullanici Adi">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="kullaniciSoyad" layoutX="133.0" layoutY="153.0" prefHeight="25.0" prefWidth="234.0" promptText="Kullanici Soyadi">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="kullaniciSifre" accessibleRole="PASSWORD_FIELD" layoutX="133.0" layoutY="207.0" prefHeight="25.0" prefWidth="234.0" promptText="Kullanici Sifre">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <JFXButton buttonType="RAISED" layoutX="133.0" layoutY="269.0" onMouseClicked="#Kayit" prefHeight="30.0" prefWidth="65.0" style="-fx-background-color: #aaaaaa;" text="Kayit">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="buttonCikis" buttonType="RAISED" layoutX="303.0" layoutY="269.0" onMouseClicked="#Cikis" prefHeight="30.0" prefWidth="65.0" style="-fx-background-color: #aaaaaa;" text="Cikis">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXButton>
+    </children>
+</AnchorPane>

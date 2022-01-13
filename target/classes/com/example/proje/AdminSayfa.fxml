@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="525.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proje.AdminSayfa">
+   <children>
+      <Label layoutX="254.0" layoutY="14.0" text="Admin Sayfası">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="69.0" layoutY="83.0" onMouseClicked="#adminGazete" prefHeight="33.0" prefWidth="84.0" style="-fx-background-color: #aaaaaa;" text="Gazete">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="191.0" layoutY="83.0" onMouseClicked="#adminDergi" prefHeight="35.0" prefWidth="84.0" style="-fx-background-color: #aaaaaa;" text="Dergi">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tablo" layoutX="33.0" layoutY="156.0" prefHeight="200.0" prefWidth="400.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="aboneNO"><cellValueFactory><PropertyValueFactory property="Aboneid">
+          </PropertyValueFactory></cellValueFactory></TableColumn>
+          <TableColumn prefWidth="75.0" text="kullaniciID"><cellValueFactory><PropertyValueFactory property="kullaniciId">
+          </PropertyValueFactory></cellValueFactory></TableColumn>
+            <TableColumn prefWidth="75.0" text="DergiID"><cellValueFactory><PropertyValueFactory property="dergiId">
+            </PropertyValueFactory></cellValueFactory></TableColumn>
+            <TableColumn prefWidth="75.0" text="gazeteID"><cellValueFactory><PropertyValueFactory property="gazeteId">
+            </PropertyValueFactory></cellValueFactory></TableColumn>
+            <TableColumn prefWidth="99.0" text="Onay"><cellValueFactory><PropertyValueFactory property="onay">
+            </PropertyValueFactory></cellValueFactory></TableColumn>
+        </columns>
+      </TableView>
+      <RadioButton fx:id="onayli" layoutX="495.0" layoutY="180.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="99.0" text="onayla" toggleGroup="$onay">
+         <toggleGroup>
+            <ToggleGroup fx:id="onay" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="onaysiz" layoutX="616.0" layoutY="180.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="99.0" text="onaylama" toggleGroup="$onay" />
+      <JFXButton buttonType="RAISED" layoutX="495.0" layoutY="243.0" onMouseClicked="#Guncelle" text="Guncelle">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="616.0" layoutY="243.0" onMouseClicked="#yenile" text="Yenile">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="exit" layoutX="618.0" layoutY="439.0" onMouseClicked="#Cikis" text="Cikis">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="502.0" layoutY="304.0" onMouseClicked="#Sil" text="Sil">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

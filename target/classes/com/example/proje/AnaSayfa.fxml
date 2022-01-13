@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="375.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proje.AnaSayfa">
+   <children>
+      <Label layoutX="125.0" layoutY="14.0" text="Dergi/Gazete Otomasyonu" textFill="#d3984b">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <JFXButton onMouseClicked="#Adres" buttonType="RAISED" layoutX="125.0" layoutY="257.0" prefHeight="39.0" prefWidth="125.0" style="-fx-background-color: #aaaaaa;" text="Adres Ekle" />
+      <JFXButton onMouseClicked="#Abone" buttonType="RAISED" layoutX="125.0" layoutY="106.0" prefHeight="39.0" prefWidth="125.0" style="-fx-background-color: #aaaaaa;" text="Abonelikler" />
+      <JFXButton onMouseClicked="#Dergi" buttonType="RAISED" layoutX="288.0" layoutY="106.0" prefHeight="39.0" prefWidth="125.0" style="-fx-background-color: #aaaaaa;" text="Dergiler" />
+      <JFXButton onMouseClicked="#Gazete" id="gazeteButton" buttonType="RAISED" layoutX="451.0" layoutY="106.0" prefHeight="39.0" prefWidth="125.0" style="-fx-background-color: #aaaaaa;" text="Gazeteler" />
+      <JFXButton onMouseClicked="#Cikis" id="exit" buttonType="RAISED" layoutX="576.0" layoutY="320.0" prefHeight="30.0" prefWidth="96.0" style="-fx-background-color: #aaaaac;" text="Cikis" />
+   </children>
+</AnchorPane>
